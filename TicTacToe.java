@@ -1,3 +1,7 @@
+// Dennis Chen 5/12/2022
+// Tic Tac Toe for 2 players
+// Grid size can change, will run into errors if the amount of tiles is too high (due to limited resolution)
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
