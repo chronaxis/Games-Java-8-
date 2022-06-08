@@ -4,7 +4,7 @@ package MazeGame;
 // Maze game
 // Get to the start from the end, you are the orange cube
 // Green is beginning, red is end
-// click to restart
+// click to restart when the game is over
 
 import java.awt.*;
 import java.awt.event.*;
@@ -176,14 +176,17 @@ public class Game {
 			int r = player.getPos().first();
 			int c = player.getPos().second();
 			
+			// get key pressed and change it to upper case for simpler if statements
+			char key = Character.toUpperCase(e.getKeyChar());
+			
 			// up (w)
-			if (e.getKeyChar() == 'w') r--;
+			if (key == 'W') r--;
 			//down (S)
-			if (e.getKeyChar() == 's') r++;
+			if (key == 'S') r++;
 			// right (D)
-			if (e.getKeyChar() == 'd') c++;
+			if (key == 'D') c++;
 			// left (A)
-			if (e.getKeyChar() == 'a') c--;
+			if (key == 'A') c--;
 
 			// check if in bounds
 			if (r < 1 || r > GRIDR || c < 1 || c> GRIDC) return;
