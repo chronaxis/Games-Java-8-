@@ -1,2 +1,2 @@
 #Games
-Games I made for fun!
+Should be plug and play, each game is contained in one individual file.
